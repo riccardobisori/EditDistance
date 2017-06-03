@@ -62,12 +62,6 @@ def testNGram():
                 namesFound.append(j)
 
     end = timer()
-    namesFound = list(set(namesFound))
-    c = open("word.txt", "a")
-    for k in namesFound:
-        c.write(k)
-
-    namesFound = list(set(namesFound))
 
     if len(namesFound) == 0:
         print "No names found."
